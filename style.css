@@ -1,0 +1,485 @@
+                body {
+                    margin: 0;
+                    margin-bottom: 120px;
+                }
+                
+                .stander {
+                    color: #107079;
+                    text-align: center;
+                }
+                
+                .bg-danger {
+                    background-color: #107079 !important;
+                }
+                
+                .justify-content-center {
+                    justify-content: center !important;
+                }
+                
+                .d-flex {
+                    display: flex !important;
+                    float: right;
+                }
+                
+                .fixedss {
+                    position: fixed !important;
+                    float: inline-start;
+                    top: 5;
+                    width: 100%;
+                    padding: 0px;
+                    margin: 5px;
+                }
+                
+                p {
+                    color: rgba(191, 255, 89, 0.993);
+                }
+                
+                h2 {
+                    color: rgb(204, 204, 204);
+                    text-align: center;
+                }
+                
+                .inputa {
+                    color: rgb(235, 35, 145);
+                }
+                
+                input {
+                    color: rgb(235, 35, 145);
+                }
+                
+                .navbar-light .navbar-brand {
+                    color: rgba(36, 204, 255, 0.9);
+                }
+                
+                .vapa {
+                    background-color: rgba(36, 204, 255, 0.9);
+                    float: center;
+                    margin: 0 0 0em 0em;
+                    right: 300px;
+                    border: 3px solid #df2a99;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                .vapb {
+                    background-color: rgba(51, 36, 255, 0.9);
+                    float: left;
+                    margin: 0 0 0em 0em;
+                    right: 30px;
+                    border: 3px solid #df2a99;
+                    text-align: center;
+                    width: 50%;
+                    height: 100%;
+                }
+                
+                .vapc {
+                    background-color: rgba(255, 160, 36, 0.9);
+                    float: right;
+                    margin: 0 0 0em 0em;
+                    left: 30px;
+                    border: 3px solid #df2a99;
+                    text-align: center;
+                    width: 50%;
+                    height: 100%;
+                }
+                /* Add a black background color to the top navigation */
+                
+                .topnav {
+                    position: relative;
+                    background-color: rgb(1, 106, 167);
+                    overflow: hidden;
+                }
+                /* Style the links inside the navigation bar */
+                
+                .topnav a {
+                    float: left;
+                    color: rgb(4, 217, 255);
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 17px;
+                }
+                /* Change the color of links on hover */
+                
+                .topnav a:hover {
+                    background-color: rgb(129, 255, 10);
+                    color: #ff009d;
+                }
+                /* Add a color to the active/current link */
+                
+                .topnav a.active {
+                    background-color: #107079;
+                    color: rgb(129, 255, 10);
+                }
+                /* Centered section inside the top navigation */
+                
+                .topnav-centered a {
+                    float: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                /* Right-aligned section inside the top navigation */
+                
+                .topnav-right {
+                    float: right;
+                    margin: 0px;
+                    padding: 0px;
+                }
+                /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+                
+                @media screen and (max-width: 600px) {
+                    .topnav a,
+                    .topnav-right {
+                        float: none;
+                        display: block;
+                    }
+                    .topnav-centered a {
+                        position: static;
+                        top: 0;
+                        left: 0;
+                        transform: none;
+                    }
+                }
+                
+                * {
+                    box-sizing: border-box
+                }
+                /* Slideshow container */
+                
+                .slideshow-container {
+                    max-width: 1000px;
+                    position: static;
+                    margin: auto;
+                    float: none;
+                }
+                /* Hide the images by default */
+                
+                .mySlides {
+                    display: none;
+                }
+                /* Next & previous buttons */
+                
+                .prev,
+                .next {
+                    cursor: pointer;
+                    position: static;
+                    top: 50%;
+                    width: auto;
+                    margin-top: -22px;
+                    padding: 16px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                    user-select: none;
+                }
+                /* Position the "next button" to the right */
+                
+                .next {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+                /* On hover, add a black background color with a little bit see-through */
+                
+                .prev:hover,
+                .next:hover {
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
+                /* Caption text */
+                
+                .text {
+                    background-color: rgb(161, 171, 175);
+                    color: #5d2e83;
+                    font-family: Tahoma;
+                    font-size: 24px;
+                    padding: 8px 12px;
+                    text-shadow: rgb(70, 119, 21);
+                    position: sticky;
+                    bottom: 8px;
+                    width: 100%;
+                    text-align: center;
+                }
+                /* Number text (1/3 etc) */
+                
+                .numbertext {
+                    color: #f2f2f2;
+                    font-size: 12px;
+                    padding: 8px 12px;
+                    position: static;
+                    top: 0;
+                }
+                /* The dots/bullets/indicators */
+                
+                .dot {
+                    cursor: pointer;
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+                
+                .active,
+                .dot:hover {
+                    background-color: #717171;
+                }
+                /* Fading animation */
+                
+                .fade {
+                    -webkit-animation-name: fade;
+                    -webkit-animation-duration: 4.5s;
+                    animation-name: fade;
+                    animation-duration: 4.5s;
+                }
+                
+                @-webkit-keyframes fade {
+                    from {
+                        opacity: .6
+                    }
+                    to {
+                        opacity: 1
+                    }
+                }
+                
+                @keyframes fade {
+                    from {
+                        opacity: .6
+                    }
+                    to {
+                        opacity: 1
+                    }
+                }
+                
+                .vap7a {
+                    background-color: rgba(36, 204, 255, 0.9);
+                    float: left;
+                    border: 3px solid #ff3f6f;
+                    text-align: center;
+                    width: 192.7px;
+                    height: 20%;
+                    margin: 0 0 0em 0em;
+                }
+                
+                .vap7b {
+                    background-color: rgba(36, 204, 255, 0.9);
+                    float: right;
+                    border: 3px solid #ff3f6f;
+                    text-align: center;
+                    width: 192.7px;
+                    height: 20%;
+                    margin: 0 0 0em 0em;
+                }
+                
+                .lon {
+                    background-color: #0f0a55;
+                    color: #107079;
+                    font-family: Tahoma;
+                    font-size: 11px;
+                }
+                
+                .lonE {
+                    background-color: #0f0a55;
+                    color: #ff0000;
+                }
+                
+                .lonO {
+                    background-color: #0f0a55;
+                    color: #51db1a;
+                }
+                
+                .lons {
+                    background-color: #0f0a55;
+                    color: #1adbd1;
+                }
+                
+                .vapn1 {
+                    background-image: url("pic/bgmn.gif");
+                    background-size: 100%;
+                    float: right;
+                    border: 3px solid #ff3f6f;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    margin: 0 0 0em 0em;
+                }
+                
+                h3 {
+                    color: #51db1a;
+                    text-shadow: 100px #fded05;
+                    background-color: #0f0a55;
+                    font-style: inherit;
+                    font-family: 'Helvetica Neue';
+                    text-align: center;
+                    margin: 90px;
+                    padding: auto;
+                    border: 0px;
+                }
+                
+                h5 {
+                    color: #51db1a;
+                    font-family: 'Helvetica Neue';
+                }
+                
+                .mott {
+                    float: left;
+                    width: 70%;
+                    height: 50%;
+                    border: 0px;
+                    padding: 0px;
+                    margin: 0px;
+                    text-align: left;
+                    color: #51db1a;
+                }
+                
+                .motta {
+                    float: right;
+                    width: 40%;
+                    height: 50%;
+                    border: 0px;
+                    padding: 0px;
+                    margin: 0px;
+                    text-align: right;
+                    color: #51db1a;
+                }
+                
+                .mottb {
+                    float: right;
+                    width: 40%;
+                    height: 50%;
+                    border: 0px;
+                    padding: 0px;
+                    margin: 0px;
+                    text-align: center;
+                    color: #51db1a;
+                }
+                
+                .mott1 {
+                    float: right;
+                    width: 30%;
+                    height: 40%;
+                    padding: 0px;
+                }
+                
+                .mott2 {
+                    float: left;
+                    left: 20px;
+                    width: 40%;
+                    height: 40%;
+                    padding: 7px;
+                }
+                
+                .orga {
+                    background-color: #fc9700;
+                    border: 3px solid #ff3f6f;
+                    text-align: center;
+                    width: 95%;
+                    height: 100%;
+                    padding: 0px;
+                    margin: 30px;
+                }
+                
+                .org1 {
+                    background-color: #fc9700;
+                    border: 3px solid #ff3f6f;
+                    text-align: center;
+                    width: 28%;
+                    height: 100%;
+                    padding: 0px;
+                    margin: 30px;
+                    float: left;
+                }
+                
+                .org2 {
+                    background-color: #fc9700;
+                    border: 3px solid #ff3f6f;
+                    text-align: center;
+                    width: 28%;
+                    height: 100%;
+                    padding: 0px;
+                    margin: 30px;
+                    float: left;
+                }
+                
+                .org3 {
+                    background-color: #fc9700;
+                    border: 3px solid #ff3f6f;
+                    text-align: center;
+                    width: 28%;
+                    height: 100%;
+                    padding: 0px;
+                    margin: 30px;
+                    float: right;
+                }
+                
+                .bar {
+                    color: rgb(71, 166, 255);
+                    text-align: center;
+                    background-color: #0a181a;
+                    padding: 20px;
+                }
+                
+                .bar1 {
+                    color: tomato;
+                    text-align: left;
+                    background-color: #107079;
+                }
+                
+                .bar2 {
+                    color: tomato;
+                    text-align: center;
+                    background-color: #107079;
+                }
+                
+                .bar3 {
+                    color: tomato;
+                    text-align: right;
+                    text-shadow: #ff0095;
+                    background-color: #107079;
+                }
+                
+                .inpa {
+                    color: #57d1b7;
+                    background-color: #717171;
+                }
+                
+                .lonn {
+                    background-color: #0a5527;
+                    color: #95dce2;
+                    font-family: Tahoma;
+                    font-size: 14px;
+                }
+                
+                .lonw {
+                    color: #3335a7;
+                    font-family: Tahoma;
+                    font-size: 17px;
+                    font-style: inherit;
+                }
+                
+                .vapn2 {
+                    background-image: url("pic/الهيئات.jpg");
+                    background-size: 100%;
+                    float: right;
+                    border: 3px solid #ff3f6f;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    margin: 0 0 0em 0em;
+                }
+                
+                .vapd {
+                    background-color: rgba(131, 102, 64, 0.9);
+                    float: right;
+                    margin: 0 0 0em 0em;
+                    left: 30px;
+                    border: 3px solid #df2a99;
+                    text-align: center;
+                    width: 50%;
+                    height: 100%;
+                }
