@@ -1,485 +1,620 @@
-                body {
-                    margin: 0;
-                    margin-bottom: 120px;
-                }
-                
-                .stander {
-                    color: #107079;
-                    text-align: center;
-                }
-                
-                .bg-danger {
-                    background-color: #107079 !important;
-                }
-                
-                .justify-content-center {
-                    justify-content: center !important;
-                }
-                
-                .d-flex {
-                    display: flex !important;
-                    float: right;
-                }
-                
-                .fixedss {
-                    position: fixed !important;
-                    float: inline-start;
-                    top: 5;
-                    width: 100%;
-                    padding: 0px;
-                    margin: 5px;
-                }
-                
-                p {
-                    color: rgba(191, 255, 89, 0.993);
-                }
-                
-                h2 {
-                    color: rgb(204, 204, 204);
-                    text-align: center;
-                }
-                
-                .inputa {
-                    color: rgb(235, 35, 145);
-                }
-                
-                input {
-                    color: rgb(235, 35, 145);
-                }
-                
-                .navbar-light .navbar-brand {
-                    color: rgba(36, 204, 255, 0.9);
-                }
-                
-                .vapa {
-                    background-color: rgba(36, 204, 255, 0.9);
-                    float: center;
-                    margin: 0 0 0em 0em;
-                    right: 300px;
-                    border: 3px solid #df2a99;
-                    text-align: center;
-                    width: 100%;
-                    height: 100%;
-                }
-                
-                .vapb {
-                    background-color: rgba(51, 36, 255, 0.9);
-                    float: left;
-                    margin: 0 0 0em 0em;
-                    right: 30px;
-                    border: 3px solid #df2a99;
-                    text-align: center;
-                    width: 50%;
-                    height: 100%;
-                }
-                
-                .vapc {
-                    background-color: rgba(255, 160, 36, 0.9);
-                    float: right;
-                    margin: 0 0 0em 0em;
-                    left: 30px;
-                    border: 3px solid #df2a99;
-                    text-align: center;
-                    width: 50%;
-                    height: 100%;
-                }
-                /* Add a black background color to the top navigation */
-                
-                .topnav {
-                    position: relative;
-                    background-color: rgb(1, 106, 167);
-                    overflow: hidden;
-                }
-                /* Style the links inside the navigation bar */
-                
-                .topnav a {
-                    float: left;
-                    color: rgb(4, 217, 255);
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                    font-size: 17px;
-                }
-                /* Change the color of links on hover */
-                
-                .topnav a:hover {
-                    background-color: rgb(129, 255, 10);
-                    color: #ff009d;
-                }
-                /* Add a color to the active/current link */
-                
-                .topnav a.active {
-                    background-color: #107079;
-                    color: rgb(129, 255, 10);
-                }
-                /* Centered section inside the top navigation */
-                
-                .topnav-centered a {
-                    float: none;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-                /* Right-aligned section inside the top navigation */
-                
-                .topnav-right {
-                    float: right;
-                    margin: 0px;
-                    padding: 0px;
-                }
-                /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-                
-                @media screen and (max-width: 600px) {
-                    .topnav a,
-                    .topnav-right {
-                        float: none;
-                        display: block;
-                    }
-                    .topnav-centered a {
-                        position: static;
-                        top: 0;
-                        left: 0;
-                        transform: none;
-                    }
-                }
-                
-                * {
-                    box-sizing: border-box
-                }
-                /* Slideshow container */
-                
-                .slideshow-container {
-                    max-width: 1000px;
-                    position: static;
-                    margin: auto;
-                    float: none;
-                }
-                /* Hide the images by default */
-                
-                .mySlides {
-                    display: none;
-                }
-                /* Next & previous buttons */
-                
-                .prev,
-                .next {
-                    cursor: pointer;
-                    position: static;
-                    top: 50%;
-                    width: auto;
-                    margin-top: -22px;
-                    padding: 16px;
-                    color: white;
-                    font-weight: bold;
-                    font-size: 18px;
-                    transition: 0.6s ease;
-                    border-radius: 0 3px 3px 0;
-                    user-select: none;
-                }
-                /* Position the "next button" to the right */
-                
-                .next {
-                    right: 0;
-                    border-radius: 3px 0 0 3px;
-                }
-                /* On hover, add a black background color with a little bit see-through */
-                
-                .prev:hover,
-                .next:hover {
-                    background-color: rgba(0, 0, 0, 0.8);
-                }
-                /* Caption text */
-                
-                .text {
-                    background-color: rgb(161, 171, 175);
-                    color: #5d2e83;
-                    font-family: Tahoma;
-                    font-size: 24px;
-                    padding: 8px 12px;
-                    text-shadow: rgb(70, 119, 21);
-                    position: sticky;
-                    bottom: 8px;
-                    width: 100%;
-                    text-align: center;
-                }
-                /* Number text (1/3 etc) */
-                
-                .numbertext {
-                    color: #f2f2f2;
-                    font-size: 12px;
-                    padding: 8px 12px;
-                    position: static;
-                    top: 0;
-                }
-                /* The dots/bullets/indicators */
-                
-                .dot {
-                    cursor: pointer;
-                    height: 15px;
-                    width: 15px;
-                    margin: 0 2px;
-                    background-color: #bbb;
-                    border-radius: 50%;
-                    display: inline-block;
-                    transition: background-color 0.6s ease;
-                }
-                
-                .active,
-                .dot:hover {
-                    background-color: #717171;
-                }
-                /* Fading animation */
-                
-                .fade {
-                    -webkit-animation-name: fade;
-                    -webkit-animation-duration: 4.5s;
-                    animation-name: fade;
-                    animation-duration: 4.5s;
-                }
-                
-                @-webkit-keyframes fade {
-                    from {
-                        opacity: .6
-                    }
-                    to {
-                        opacity: 1
-                    }
-                }
-                
-                @keyframes fade {
-                    from {
-                        opacity: .6
-                    }
-                    to {
-                        opacity: 1
-                    }
-                }
-                
-                .vap7a {
-                    background-color: rgba(36, 204, 255, 0.9);
-                    float: left;
-                    border: 3px solid #ff3f6f;
-                    text-align: center;
-                    width: 192.7px;
-                    height: 20%;
-                    margin: 0 0 0em 0em;
-                }
-                
-                .vap7b {
-                    background-color: rgba(36, 204, 255, 0.9);
-                    float: right;
-                    border: 3px solid #ff3f6f;
-                    text-align: center;
-                    width: 192.7px;
-                    height: 20%;
-                    margin: 0 0 0em 0em;
-                }
-                
-                .lon {
-                    background-color: #0f0a55;
-                    color: #107079;
-                    font-family: Tahoma;
-                    font-size: 11px;
-                }
-                
-                .lonE {
-                    background-color: #0f0a55;
-                    color: #ff0000;
-                }
-                
-                .lonO {
-                    background-color: #0f0a55;
-                    color: #51db1a;
-                }
-                
-                .lons {
-                    background-color: #0f0a55;
-                    color: #1adbd1;
-                }
-                
-                .vapn1 {
-                    background-image: url("pic/bgmn.gif");
-                    background-size: 100%;
-                    float: right;
-                    border: 3px solid #ff3f6f;
-                    text-align: center;
-                    width: 100%;
-                    height: 100%;
-                    margin: 0 0 0em 0em;
-                }
-                
-                h3 {
-                    color: #51db1a;
-                    text-shadow: 100px #fded05;
-                    background-color: #0f0a55;
-                    font-style: inherit;
-                    font-family: 'Helvetica Neue';
-                    text-align: center;
-                    margin: 90px;
-                    padding: auto;
-                    border: 0px;
-                }
-                
-                h5 {
-                    color: #51db1a;
-                    font-family: 'Helvetica Neue';
-                }
-                
-                .mott {
-                    float: left;
-                    width: 70%;
-                    height: 50%;
-                    border: 0px;
-                    padding: 0px;
-                    margin: 0px;
-                    text-align: left;
-                    color: #51db1a;
-                }
-                
-                .motta {
-                    float: right;
-                    width: 40%;
-                    height: 50%;
-                    border: 0px;
-                    padding: 0px;
-                    margin: 0px;
-                    text-align: right;
-                    color: #51db1a;
-                }
-                
-                .mottb {
-                    float: right;
-                    width: 40%;
-                    height: 50%;
-                    border: 0px;
-                    padding: 0px;
-                    margin: 0px;
-                    text-align: center;
-                    color: #51db1a;
-                }
-                
-                .mott1 {
-                    float: right;
-                    width: 30%;
-                    height: 40%;
-                    padding: 0px;
-                }
-                
-                .mott2 {
-                    float: left;
-                    left: 20px;
-                    width: 40%;
-                    height: 40%;
-                    padding: 7px;
-                }
-                
-                .orga {
-                    background-color: #fc9700;
-                    border: 3px solid #ff3f6f;
-                    text-align: center;
-                    width: 95%;
-                    height: 100%;
-                    padding: 0px;
-                    margin: 30px;
-                }
-                
-                .org1 {
-                    background-color: #fc9700;
-                    border: 3px solid #ff3f6f;
-                    text-align: center;
-                    width: 28%;
-                    height: 100%;
-                    padding: 0px;
-                    margin: 30px;
-                    float: left;
-                }
-                
-                .org2 {
-                    background-color: #fc9700;
-                    border: 3px solid #ff3f6f;
-                    text-align: center;
-                    width: 28%;
-                    height: 100%;
-                    padding: 0px;
-                    margin: 30px;
-                    float: left;
-                }
-                
-                .org3 {
-                    background-color: #fc9700;
-                    border: 3px solid #ff3f6f;
-                    text-align: center;
-                    width: 28%;
-                    height: 100%;
-                    padding: 0px;
-                    margin: 30px;
-                    float: right;
-                }
-                
-                .bar {
-                    color: rgb(71, 166, 255);
-                    text-align: center;
-                    background-color: #0a181a;
-                    padding: 20px;
-                }
-                
-                .bar1 {
-                    color: tomato;
-                    text-align: left;
-                    background-color: #107079;
-                }
-                
-                .bar2 {
-                    color: tomato;
-                    text-align: center;
-                    background-color: #107079;
-                }
-                
-                .bar3 {
-                    color: tomato;
-                    text-align: right;
-                    text-shadow: #ff0095;
-                    background-color: #107079;
-                }
-                
-                .inpa {
-                    color: #57d1b7;
-                    background-color: #717171;
-                }
-                
-                .lonn {
-                    background-color: #0a5527;
-                    color: #95dce2;
-                    font-family: Tahoma;
-                    font-size: 14px;
-                }
-                
-                .lonw {
-                    color: #3335a7;
-                    font-family: Tahoma;
-                    font-size: 17px;
-                    font-style: inherit;
-                }
-                
-                .vapn2 {
-                    background-image: url("pic/الهيئات.jpg");
-                    background-size: 100%;
-                    float: right;
-                    border: 3px solid #ff3f6f;
-                    text-align: center;
-                    width: 100%;
-                    height: 100%;
-                    margin: 0 0 0em 0em;
-                }
-                
-                .vapd {
-                    background-color: rgba(131, 102, 64, 0.9);
-                    float: right;
-                    margin: 0 0 0em 0em;
-                    left: 30px;
-                    border: 3px solid #df2a99;
-                    text-align: center;
-                    width: 50%;
-                    height: 100%;
-                }
+* {
+    box-sizing: border-box;
+    cursor: crosshair
+}
+
+
+/* Copyright © 2010-2021 Sajid Mottar Outaiwi- All rights reserved. */
+
+html {
+    display: block;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: helvetica-reg;
+    line-height: 1.42857143;
+    background-color: rgb(204, 157, 204);
+}
+
+.stander {
+    text-align: center;
+    color: rgb(0, 4, 255);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(189, 7, 68);
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    padding: 0px;
+    margin: 9px;
+    border: 0px;
+}
+
+.stander:hover {
+    transform: rotate( 180deg);
+    transition: width 2s, height 2s, transform 2s;
+}
+
+@keyframes stander {
+    0% {
+        transform: rotate( 0deg);
+        right: 0px;
+    }
+    25% {
+        transform: rotate( 0deg);
+        left: 0px;
+    }
+    50% {
+        transform: rotate( 0deg);
+        left: 500px;
+    }
+    55% {
+        transform: rotate( 0deg);
+        left: 500px;
+    }
+    70% {
+        transform: rotate( 0deg);
+        left: 500px;
+        background: #1ec7e6;
+    }
+    100% {
+        transform: rotate( -360deg);
+        left: 0px;
+    }
+}
+
+.bg-border {
+    border: 5px solid transparent;
+    padding: 0px;
+    border-image: url(pic/border.png) 30% round;
+}
+
+.lon {
+    background-color: #130d6de7;
+    color: rgb(161, 163, 33);
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+.lonE {
+    color: #ff0000;
+}
+
+.lonO {
+    color: #51db1a;
+}
+
+.lons {
+    color: #1adbd1;
+}
+
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    cursor: auto;
+    color: rgba(191, 255, 89, 0.993);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+img {
+    cursor: pointer;
+}
+
+.p-central {
+    text-align: center;
+}
+
+h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #51db1a;
+    font-family: 'Helvetica Neue';
+    text-align: center;
+    cursor: auto;
+}
+
+.p-org-p {
+    display: block;
+    font-size: 18px;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #51db1a;
+    font-family: 'Helvetica Neue';
+    text-align: center;
+    cursor: auto;
+}
+
+h4 {
+    cursor: auto;
+    left: 10px;
+    text-align: center;
+}
+
+
+/* Copyright © 2010-2021 Sajid Mottar Outaiwi- All rights reserved. */
+
+h3 {
+    color: #51db1a;
+    text-shadow: 100px #fded05;
+    background-color: #0f0a55;
+    font-style: inherit;
+    font-family: 'Helvetica Neue';
+    text-align: center;
+    margin: 90px;
+    padding: auto;
+    border: 0px;
+    cursor: auto;
+}
+
+h2 {
+    color: rgb(204, 204, 204);
+    text-align: center;
+    cursor: auto;
+}
+
+h1 {
+    cursor: auto;
+}
+
+.control-search {
+    float: left;
+    padding: 14px 16px;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    top: 50%;
+    display: flex;
+}
+
+.btn-search {
+    color: rgb(129, 255, 10);
+    background-color: rgba(36, 204, 255, 0.9);
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.progress-bar {
+    background-color: #ff009d !important;
+    height: 10px;
+    width: 100%;
+    display: flex;
+}
+
+.fixedss {
+    position: fixed !important;
+    float: inline-start;
+    top: 10%;
+    width: 100%;
+    padding: 0px;
+    margin: 5px;
+    flex-wrap: nowrap;
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: rgb(129, 255, 10);
+    color: #ff009d;
+}
+
+.btn-search:hover {
+    color: #ff009d;
+}
+
+.a-navbar-0 {
+    color: rgba(36, 204, 255, 0.9);
+    background-color: rgb(129, 255, 10);
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+
+/* Copyright © 2010-2021 Sajid Mottar Outaiwi- All rights reserved. */
+
+.d-flex {
+    display: flex !important;
+    float: right;
+    align-self: center;
+    height: 40px;
+}
+
+.form-input {
+    color: rgb(235, 35, 145);
+}
+
+input {
+    color: rgb(235, 35, 145);
+    cursor: auto;
+}
+
+.div-1 {
+    background-color: rgba(36, 204, 255, 0.9);
+    float: center;
+    margin: 0 0 0em 0em;
+    right: 300px;
+    border: 3px solid #df2a99;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.div-2 {
+    background-color: rgba(51, 36, 255, 0.322);
+    float: left;
+    margin: 0 0 0em 0em;
+    right: 30px;
+    border: 3px solid #df2a99;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
+
+.div-3 {
+    background-color: rgba(51, 36, 255, 0.322);
+    float: right;
+    margin: 0 0 0em 0em;
+    left: 30px;
+    border: 3px solid #df2a99;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
+
+.div-4 {
+    background-color: rgba(131, 102, 64, 0.9);
+    float: left;
+    margin: 0 0 0em 0em;
+    left: 30px;
+    border: 3px solid #df2a99;
+    text-align: center;
+    width: 100%;
+}
+
+.div-5 {
+    background-color: rgba(131, 102, 64, 0.9);
+    float: left;
+    margin: 0 0 0em 0em;
+    left: 30px;
+    border: 3px solid #df2a99;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+    position: relative;
+    background-color: rgb(1, 106, 167);
+    overflow: hidden;
+    height: 50px !important;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    color: rgb(4, 217, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0px;
+}
+
+
+/* Add a color to the active/current link */
+
+.topnav a.active {
+    background-color: rgba(36, 204, 255, 0.9);
+    color: rgb(129, 255, 10);
+}
+
+
+/* Centered section inside the top navigation */
+
+.topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Right-aligned section inside the top navigation */
+
+.topnav-right {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mottb {
+    float: right;
+    width: 40%;
+    height: 50%;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    color: #51db1a;
+}
+
+.bar {
+    color: rgb(71, 166, 255);
+    text-align: center;
+    background-color: #0a181a;
+    padding: 20px;
+}
+
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+    --bs-table-bg: transparent;
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: #212529;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: #212529;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: #212529;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border-color: #dee2e6;
+}
+
+.table>tbody {
+    vertical-align: inherit;
+    background-color: rgb(136, 44, 136);
+}
+
+.table>thead {
+    vertical-align: bottom;
+}
+
+.table-dark {
+    --bs-table-bg: #212529;
+    --bs-table-striped-bg: #2c3034;
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: #373b3e;
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: #323539;
+    --bs-table-hover-color: #fff;
+    color: #fff;
+    border-color: #373b3e;
+    background-color: black;
+}
+
+.col {
+    flex: 1 0 0%;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.facebook,
+.twitter,
+.instagram {
+    background-color: #3b5998;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    max-width: 200px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+/* Copyright © 2010-2021 Sajid Mottar Outaiwi- All rights reserved. */
+
+.facebook svg,
+.twitter svg,
+.instagram svg {
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid rgba(219, 192, 132, 0.836);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid rgb(204, 159, 159);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid rgb(202, 150, 150);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #5ae424;
+}
+
+.div-sign-in {
+    border-radius: 5px;
+    background-color: #545d70a9;
+    padding: 20px;
+}
+
+
+/* -------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 7px;
+    background-color: rgb(5, 57, 116);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    text-shadow: 2px 2px 3px rgb(240, 30, 30), 0 0 25px rgb(211, 32, 0), 0 0 5px rgb(17, 2, 2);
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: rgb(5, 57, 116);
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
